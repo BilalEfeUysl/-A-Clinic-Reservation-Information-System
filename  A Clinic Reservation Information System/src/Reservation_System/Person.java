@@ -15,6 +15,14 @@ public class Person implements Serializable {
         this.name = name;
         this.national_id = national_id;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public long getNational_id() {
+        return national_id;
+    }
     
     @Override
     public String toString(){
