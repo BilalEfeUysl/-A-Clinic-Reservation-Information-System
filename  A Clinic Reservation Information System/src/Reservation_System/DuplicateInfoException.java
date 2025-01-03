@@ -1,7 +1,10 @@
 
 package Reservation_System;
 
+import java.lang.RuntimeException;
 
-public class DuplicateInfoException {
-    
+public class DuplicateInfoException extends RuntimeException {
+    public DuplicateInfoException(String message){
+        super(message);
+    }
 }

@@ -31,7 +31,12 @@ public class Section implements Serializable{
         return null;
     }
     
-    public void addDoctor(Doctor doctor){
+    public void addDoctor(Doctor doctor) throws DuplicateInfoException{
+        for (Doctor existingDoctor : doctors) {
+            if(existingDoctor.getDiploma_id() == doctor.getDiploma_id()){
+                throw new DuplicateInfoException("Duplicate diploma ID: " + doctor.getDiploma_id());
+            }
+        }
         doctors.add(doctor);
     }
 
