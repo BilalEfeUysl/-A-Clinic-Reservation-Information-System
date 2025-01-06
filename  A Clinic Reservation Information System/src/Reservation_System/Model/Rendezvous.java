@@ -1,10 +1,11 @@
 
-package Reservation_System;
+package Reservation_System.Model;
 
+import java.io.Serializable;
 import java.util.Date;
 
 
-public class Rendezvous {
+public class Rendezvous implements Serializable {
     private Date dateTime;
     private Patient patient;
 
@@ -15,6 +16,10 @@ public class Rendezvous {
     
     public Date getDate(){
         return this.dateTime;
+    }
+
+    public void setDateTime(Date dateTime) {
+        this.dateTime = dateTime;
     }
     
     

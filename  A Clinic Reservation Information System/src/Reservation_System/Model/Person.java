@@ -1,5 +1,5 @@
 
-package Reservation_System;
+package Reservation_System.Model;
 
 import java.io.Serializable;
 

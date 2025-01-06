@@ -1,6 +1,7 @@
 
-package Reservation_System;
+package Reservation_System.Model;
 
+import Reservation_System.Exceptions.DuplicateInfoException;
 import java.io.Serializable;
 import java.util.LinkedList;
 
@@ -22,7 +23,7 @@ public class Section implements Serializable{
         }
     }
 
-    public Doctor getDoctors(int diploma_id) {
+    public Doctor getDoctor(int diploma_id) {
         for (Doctor doctor : doctors) {
             if(doctor.getDiploma_id() == diploma_id){
                 return doctor;

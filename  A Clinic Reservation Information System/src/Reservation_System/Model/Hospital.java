@@ -1,5 +1,5 @@
 
-package Reservation_System;
+package Reservation_System.Model;
 
 import java.io.Serializable;
 import java.util.LinkedList;
@@ -17,7 +17,7 @@ public class Hospital implements Serializable{
         this.sections = new LinkedList<>();
     }
 
-    public Section getSections(int id) {
+    public Section getSection(int id) {
         for (Section section : sections) {
             if(section.getId() == id){
                 return section;
@@ -27,9 +27,9 @@ public class Hospital implements Serializable{
         return null;
     }
     
-    public Section getSections(String name) {
+    private Section getSections(String name) {
         for (Section section : sections) {
-            if(section.getName() == name){
+            if(section.getName().equals(name)){
                 return section;
             } 
         }
@@ -39,6 +39,10 @@ public class Hospital implements Serializable{
     
     public void addSection(Section section){
         sections.add(section);
+    }
+
+    public int getId() {
+        return id;
     }
     
 }

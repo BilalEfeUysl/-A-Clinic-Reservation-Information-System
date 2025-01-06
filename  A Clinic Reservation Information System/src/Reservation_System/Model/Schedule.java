@@ -1,5 +1,5 @@
 
-package Reservation_System;
+package Reservation_System.Model;
 
 import java.io.Serializable;
 import java.util.Calendar;
@@ -40,4 +40,6 @@ public class Schedule implements Serializable{
         sessions.add(newRendezvous);
         return true;
     }
+    
+    
 }

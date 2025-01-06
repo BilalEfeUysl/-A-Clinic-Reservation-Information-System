@@ -1,5 +1,5 @@
 
-package Reservation_System;
+package Reservation_System.Exceptions;
 
 import java.lang.RuntimeException;
 
