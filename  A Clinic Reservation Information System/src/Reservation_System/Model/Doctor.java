@@ -1,8 +1,10 @@
 
 package Reservation_System.Model;
 
+import java.io.Serializable;
 
-public class Doctor extends Person {
+public class Doctor extends Person implements Serializable{
+	private static final long serialVersionUID = 1L;
     private final int diploma_id;
     private Schedule schedule;
     

@@ -14,6 +14,10 @@ public class Rendezvous implements Serializable {
         this.patient = patient;
     }
     
+    public Patient getPatient() {
+    	return patient;
+    }
+    
     public Date getDate(){
         return this.dateTime;
     }

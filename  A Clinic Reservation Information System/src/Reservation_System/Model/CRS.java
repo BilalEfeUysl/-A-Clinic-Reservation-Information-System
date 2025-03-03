@@ -3,21 +3,17 @@ package Reservation_System.Model;
 
 import Reservation_System.Exceptions.IDException;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
-import java.io.ObjectOutput;
 import java.io.ObjectOutputStream;
+import java.io.Serializable;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.LinkedList;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 
-
-public class CRS {
+public class CRS implements Serializable{
     
     private static final long serialVersionUID = 1L;
     
